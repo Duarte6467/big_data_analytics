@@ -85,11 +85,6 @@ missing_count.show()
 column_summary = df.drop("Country Name", "Regional Indicator", "Year")  # No use in asssesing these columns
 column_summary.describe().show()
 
-# Perform the Process of filling the missing values
-
-
-# assume you have a DataFrame called 'df' with columns 'Country Name', 'Year', and other columns
-
 # Define a Window, that is divided by 'Country Name' (Davis, 2022)
 w = Window.partitionBy('Country Name')
 
